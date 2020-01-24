@@ -1,0 +1,37 @@
+.mangalist-container{
+    padding:30px;
+    .list-table{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        th,td{
+            padding:unset;
+        }
+        thead {
+            th,td{padding:0.75rem}
+        }
+        tbody{
+            tr{
+                &:hover{
+                    cursor:pointer
+                }
+            }
+            tr:nth-child(odd){
+                background-color: lightslategrey;
+                &:hover{
+                    background: rgb(149, 161, 172);
+                } 
+            }
+            tr:nth-child(even){
+                background-color: lightsteelblue;
+                &:hover{
+                    background: rgb(193, 210, 233);
+                }
+            }
+            th,td{
+                font-weight: 700;
+                padding:5px 12px;
+                
+            }
+        }
+    }
+}
